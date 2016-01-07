@@ -1,0 +1,39 @@
+{
+
+  "api": {
+    "stockSearch": "env:GFWC-stockSearch"
+  },
+
+  "specialization": {
+  },
+
+  "middleware": {
+
+    "cookieParser": {
+      "module": {
+        "arguments": ["your secret here"]
+      }
+    },
+
+    "validator": {
+      "priority": "91",
+      "enabled": true,
+      "module": {
+        "name": "path:./lib/middlewares/validator"
+      }
+    },
+
+    "static": {
+      "module": {
+        "arguments": [ "path:./.build" ]
+      }
+    },
+
+    "router": {
+      "module": {
+        "arguments": [{ "directory": "path:./controllers" }]
+      }
+    }
+
+  }
+}
