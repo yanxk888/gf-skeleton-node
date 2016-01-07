@@ -1,0 +1,13 @@
+{
+  "generator-kraken": {
+    "taskModule": "grunt",
+    "description": "广发node项目脚手架，整合 kraken 和前言的node开发环境",
+    "author": "sivagao@126.com",
+    "templateModule": false,
+    "i18n": false,
+    "componentPackager": false,
+    "cssModule": false,
+    "jsModule": false,
+    "useJson": null
+  }
+}
