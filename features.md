@@ -136,7 +136,7 @@ _.extend(process.env, {
   }]
 }
 ```
-pm2 start server/server.js --name "gfwealth-composite"
+pm2 start .pm2_config.json
 
 
 ### 如何部署es6代码用于线上生产（先构建好 es5-compatible ）
