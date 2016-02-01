@@ -141,6 +141,11 @@ pm2 start server/server.js --name "gfwealth-composite"
 
 ### 如何部署es6代码用于线上生产（先构建好 es5-compatible ）
 
+```shell
+rm -rf deploy/.es5
+cp -R src deploy/.es5
+babel src --out-dir deploy/.es5 --ignore src/node_modules
+```
 
 ### 如何更高级的使用的配置文件
 
